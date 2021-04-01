@@ -1,4 +1,4 @@
-#By default, the login page set “手机号快捷登录” and region = 中国 （+86)
+#By default, the login page set method = “手机号快捷登录” and region = 中国 （+86)
 
 #loginlive: allows you to login manually 
 
@@ -19,7 +19,7 @@ def loginHK(item_link, username, password):
         driver.find_element_by_id("login_init_by_login").click()
         time.sleep(1)
 
-        #点账号密码登录 Choose login by username and password
+        #点账号密码登录 Choose login by method = "username and password"
         driver.find_element_by_class_name("login_content_h4").click()
         time.sleep(1)
 
