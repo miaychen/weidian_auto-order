@@ -43,8 +43,8 @@ def SKU(link):
         sku_key = list(sku_dict.keys())
         #number of sku
         item_no = len(sku_key)
-        sku_list=list()
-        sku_list_amount=list()
+        sku_list_title=list()
+        sku_list_stock=list()
         for i in range(len(sku_key)):
 
             print(i+1, sku_key[i], sku_dict[sku_key[i]]['title'], sku_dict[sku_key[i]]['stock'])
@@ -54,8 +54,8 @@ def SKU(link):
         #if seller did not set sku
         item_no = 0
         sku_key = []
-        sku_list = []
-        sku_list_amount=[]
+        sku_list_title = []
+        sku_list_stock=[]
 
-    summary = {"SellTime":Selltime_time, "ItemID":Item_ID, "No.SKU":item_no, "SKUID":sku_key, "SKUName":sku_list, "Stock": sku_list_amount}
+    summary = {"SellTime":Selltime_time, "ItemID":Item_ID, "No.SKU":item_no, "SKUID":sku_key, "SKUName":sku_list_title, "Stock": sku_list_stock}
     return(summary)
