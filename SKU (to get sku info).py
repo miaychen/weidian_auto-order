@@ -55,6 +55,7 @@ def SKU(link):
         item_no = 0
         sku_key = []
         sku_list = []
+        sku_list_amount=[]
 
-    summary = {"SellTime":Selltime_time, "ItemID":Item_ID, "No.SKU":item_no, "SKUID":sku_key, "SKUName":sku_list}
+    summary = {"SellTime":Selltime_time, "ItemID":Item_ID, "No.SKU":item_no, "SKUID":sku_key, "SKUName":sku_list, "Stock": sku_list_amount}
     return(summary)
